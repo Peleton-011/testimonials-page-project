@@ -1,19 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@200;300;400;700&display=swap");
+
 body {
     height: 100vh;
-    background-color: hsl(0, 0%, 81%);
+    background-color: hsl(210, 46%, 95%);
+    /* background-color: hsl(0, 0%, 81%); */
     font-size: 13px;
-    color: /*hsl(210, 46%, 95%);*/
+    font-family: "Barlow Semi Condensed";
+    color: hsl(219, 29%, 14%);
+    line-height: 1.7;
 }
 
-img {
+.testimonials {
+    max-width: 1440px;
+    margin: 100px;
+}
+
+.card__img {
+    height: 60px;
+    width: 60px;
     border-radius: 50%;
-    border: 2px solid hsla(0, 0%, 100%, 50%);
+    border: 3px solid hsla(0, 0%, 100%, 50%);
+}
+
+.card--bg-blue .card__img {
+    border-color: rgb(167, 100, 205);
 }
 
 .card {
+    margin: 10px;
+
     background-color: hsl(0, 0%, 100%);
     border-radius: 10px;
-    padding: 10px 20px;
+    padding: 20px 40px;
+    box-shadow: rgba(17, 12, 45, 0.15) 0px 48px 100px 0px;
 }
 
 .card--bg-purple {
@@ -28,9 +47,31 @@ img {
     background-color: hsl(219, 29%, 14%);
 }
 
+.card--bg-blue,
+.card--bg-grey,
+.card--bg-purple {
+    color: hsl(0, 0%, 81%);
+}
 
-/* 1. "Verified Graduate" has the same color as the person's name with 50% opacity
-2. Review paragraphs inside the quotations have the same color as well, but are at 70% opacity
+.card__header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
 
-- Family: [Barlow Semi Condensed](https://fonts.google.com/specimen/Barlow+Semi+Condensed)
-- Weights: 500, 600 */
+.card__header h3 {
+    font-size: 15px;
+    margin: 0px;
+}
+
+.card__header p {
+    opacity: 50%;
+    margin: 0px;
+}
+
+.card__quote {
+    font-style: italic;
+    opacity: 70%;
+}
+
+/*- Weights: 500, 600 */
