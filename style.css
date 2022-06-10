@@ -99,4 +99,24 @@ footer {
     justify-content: center;
 }
 
-/*- Weights: 500, 600 */
+@media(max-width: 768px) {
+    .testimonials{
+        grid-template-columns: 1fr;
+        margin: 10px;
+    }
+
+    .card--bg-purple {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .card:nth-of-type(3) {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .card--bg-blue {
+        grid-column: 1;
+        grid-row: 5;
+    }
+}
